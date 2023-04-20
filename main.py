@@ -27,7 +27,7 @@ def start(message):
     )
 
 
-@bot.message_handler(commands=['help'])
+@bot.message_handler(commands=['help']) 
 def help(message):
     markup = telebot.types.InlineKeyboardMarkup(row_width=3)
     get_currency_btn = telebot.types.InlineKeyboardButton(
